@@ -5,8 +5,14 @@ import FormUsuario  from './components/FormUsuario';
 import ListaUsuarios from './components/ListaUsuarios';
 import isValidEmail from  '../../helpers/emailValidator';
 
+ interface UsuarioData {
+  nome: string;
+  email: string;
+  idade: string;
+}
+
 function Usuarios() {
-  const [usuarios, setUsuarios] = useState([]);
+  const [usuarios, setUsuarios] = useState<UsuarioData[]>([]);
   const [editIndex, setEditIndex]= useState(null);
 
   const [formData, setFormData] = useState({
