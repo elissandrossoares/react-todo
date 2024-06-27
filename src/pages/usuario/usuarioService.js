@@ -1,4 +1,4 @@
-import { getLocalStorage, setLocalStorage } from '../../services/localStorageService';
+import { getLocalStorage, setLocalStorage } from '../../services/LocalStorageService';
 
 const KEY = 'usuarios';
 

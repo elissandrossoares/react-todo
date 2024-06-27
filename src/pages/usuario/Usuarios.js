@@ -1,11 +1,11 @@
 import './usuario.css';
 import { useEffect, useState } from 'react';
-import { adicionarUsuario, deletarUsuario, editarUsuario, listarUsuarios } from './usuarioService'
-import FormUsuario  from './components/formUsuario';
-import ListaUsuarios from './components/listaUsuarios';
+import { adicionarUsuario, deletarUsuario, editarUsuario, listarUsuarios } from './UsuarioService'
+import FormUsuario  from './components/FormUsuario';
+import ListaUsuarios from './components/ListaUsuarios';
 import isValidEmail from  '../../helpers/emailValidator';
 
-function Usuario() {
+function Usuarios() {
   const [usuarios, setUsuarios] = useState([]);
   const [editIndex, setEditIndex]= useState(null);
 
@@ -136,4 +136,4 @@ function Usuario() {
   );
 }
 
-export default Usuario;
+export default Usuarios;

@@ -1,9 +1,9 @@
 import './App.css';
-import Usuario from './pages/usuario/usuario'; 
+import Usuarios from './pages/usuario/Usuarios';
 
 function App() {
   return (
-    <Usuario />
+    <Usuarios />
   );
 }
 
